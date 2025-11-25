@@ -62,10 +62,10 @@ const Index = () => {
             </nav>
             
             <div className="hidden md:flex items-center gap-3">
-              <a href="#offer" className="px-3 py-2 text-sm rounded-md border border-white/15 hover:border-accent-500 transition-colors">
+              <a href="#offer" className="btn-cta-outline text-sm">
                 Vantage Offer
               </a>
-              <a href="#cta" className="btn-primary text-sm">
+              <a href="#cta" className="btn-cta-gradient text-sm">
                 Start Free Trial
               </a>
             </div>
@@ -103,15 +103,15 @@ const Index = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 lg:pt-20 pb-16 relative z-10">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div>
-                <h1 className="text-3xl sm:text-5xl font-extrabold leading-tight" style={{ fontFamily: "'Nexa Trial', sans-serif" }}>
-                  AI that explains <span className="text-brand-orange font-semibold">why</span> the market moves — not just what happens.
+                <h1 className="text-3xl sm:text-5xl font-extrabold leading-tight">
+                  AI that explains <span className="text-brand-orange">why</span> the market moves — not just what happens.
                 </h1>
                 <p className="mt-5 text-white/80 text-lg max-w-xl">
                   Tracr AI combines real-time price action, sentiment, and fundamentals to tell you the story behind every US market move — so you can trade with clarity and confidence.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                  <a href="#cta" className="btn-cta-gradient text-center">Start Free Trial</a>
-                  <a href="#offer" className="btn-cta-outline text-center">Register via Vantage (1-year free)</a>
+                  <a href="#cta" className="btn-primary text-center">Start Free Trial</a>
+                  <a href="#offer" className="btn-secondary text-center">Register via Vantage (1-year free)</a>
                 </div>
                 <div className="mt-4 text-sm text-white/60">
                   No credit card required · Non-advisory insights · Built for UK traders
@@ -136,7 +136,7 @@ const Index = () => {
       {/* PROBLEM / PROMISE */}
       <section className="py-16 lg:py-20 border-t border-white/10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-bold">You don't need more data. You need <span className="text-brand-orange" style={{ fontFamily: "'Nexa Trial', sans-serif" }}>clarity</span>.</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold">You don't need more data. You need clarity.</h2>
             <p className="mt-4 text-white/75 max-w-3xl">
               Most traders juggle charts, news feeds, and indicators yet still wonder <em>why</em> price moved. Tracr brings it all together — turning complex signals into a simple, AI-powered story you can act on.
             </p>
@@ -146,7 +146,7 @@ const Index = () => {
                 <p className="text-white/75 text-sm">Stop switching between tools to connect the dots.</p>
               </div>
               <div className="card-glass rounded-xl p-5">
-                <div className="text-accent-500 font-semibold mb-1">Know the "why"</div>
+                <div className="text-accent-500 font-semibold mb-1">Know the <span className="text-brand-orange">"why"</span></div>
                 <p className="text-white/75 text-sm">Combine price action, fundamentals, and sentiment in one view.</p>
               </div>
               <div className="card-glass rounded-xl p-5">
@@ -218,7 +218,7 @@ const Index = () => {
         {/* FEATURES */}
         <section id="features" className="py-16 lg:py-20 border-t border-white/10">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center" style={{ fontFamily: "'Nexa Trial', sans-serif" }}>
+            <h2 className="text-2xl sm:text-3xl font-bold text-center">
               <span className="text-brand-orange">Why</span> traders choose Tracr AI
             </h2>
             <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
