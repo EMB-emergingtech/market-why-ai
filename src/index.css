@@ -26,6 +26,12 @@ All colors MUST be HSL.
     --accent-600: 199 100% 50%;      /* #0096FF */
     
     --aqua: 187 100% 50%;            /* #00E5FF */
+    
+    /* Brand orange */
+    --brand-orange: 16 100% 61%;     /* #FF6A39 */
+    
+    /* Blue tones for gradients */
+    --blue-light: 199 100% 77%;      /* #5BBEFF */
 
     --card: 220 40% 8%;
     --card-foreground: 0 0% 100%;
@@ -48,6 +54,9 @@ All colors MUST be HSL.
     /* Gradients */
     --gradient-glow-start: 199 100% 57% / 0.28;
     --gradient-glow-end: 187 100% 50% / 0.2;
+    
+    /* Hero gradient */
+    --hero-gradient: linear-gradient(135deg, #021746 0%, #0D3E9A 60%, #5BBEFF 100%);
   }
 }
 
@@ -89,5 +98,33 @@ All colors MUST be HSL.
   
   .btn-secondary {
     @apply px-6 py-3 rounded-lg border border-white/15 hover:border-[hsl(var(--accent-500))] transition-colors;
+  }
+  
+  .btn-cta-gradient {
+    background: linear-gradient(90deg, #0D3E9A 0%, #5BBEFF 100%);
+    @apply px-6 py-3 text-white font-medium transition-all;
+    border-radius: 14px;
+    box-shadow: 0px 0px 16px rgba(91, 190, 255, 0.45);
+  }
+  
+  .btn-cta-gradient:hover {
+    box-shadow: 0px 0px 20px rgba(91, 190, 255, 0.6);
+  }
+  
+  .btn-cta-outline {
+    background: transparent;
+    border: 1.5px solid #5BBEFF;
+    color: #5BBEFF;
+    @apply px-6 py-3 font-medium transition-all;
+    border-radius: 14px;
+    box-shadow: 0px 0px 12px rgba(91, 190, 255, 0.35);
+  }
+  
+  .btn-cta-outline:hover {
+    box-shadow: 0px 0px 16px rgba(91, 190, 255, 0.5);
+  }
+  
+  .hero-gradient-bg {
+    background: linear-gradient(135deg, #021746 0%, #0D3E9A 60%, #5BBEFF 100%);
   }
 }

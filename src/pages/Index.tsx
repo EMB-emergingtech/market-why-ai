@@ -98,23 +98,20 @@ const Index = () => {
       <main>
         {/* HERO */}
         <section className="relative overflow-hidden">
-          <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
-            <div className="absolute -top-24 -left-24 w-[40rem] h-[40rem] bg-accent-500/15 blur-3xl rounded-full" />
-            <div className="absolute -bottom-24 -right-24 w-[40rem] h-[40rem] bg-aqua-500/15 blur-3xl rounded-full" />
-          </div>
+          <div className="absolute inset-0 pointer-events-none hero-gradient-bg" aria-hidden="true"></div>
           
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 lg:pt-20 pb-16 relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 lg:pt-20 pb-16 relative z-10">
             <div className="grid lg:grid-cols-2 gap-10 items-center">
               <div>
-                <h1 className="text-3xl sm:text-5xl font-extrabold leading-tight">
-                  AI that explains <span className="text-accent-500">why</span> the market moves — not just what happens.
+                <h1 className="text-3xl sm:text-5xl font-extrabold leading-tight" style={{ fontFamily: "'Nexa Trial', sans-serif" }}>
+                  AI that explains <span className="text-brand-orange font-semibold">why</span> the market moves — not just what happens.
                 </h1>
                 <p className="mt-5 text-white/80 text-lg max-w-xl">
                   Tracr AI combines real-time price action, sentiment, and fundamentals to tell you the story behind every US market move — so you can trade with clarity and confidence.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-3">
-                  <a href="#cta" className="btn-primary text-center">Start Free Trial</a>
-                  <a href="#offer" className="btn-secondary text-center">Register via Vantage (1-year free)</a>
+                  <a href="#cta" className="btn-cta-gradient text-center">Start Free Trial</a>
+                  <a href="#offer" className="btn-cta-outline text-center">Register via Vantage (1-year free)</a>
                 </div>
                 <div className="mt-4 text-sm text-white/60">
                   No credit card required · Non-advisory insights · Built for UK traders
@@ -136,10 +133,10 @@ const Index = () => {
           </div>
         </section>
 
-        {/* PROBLEM / PROMISE */}
-        <section className="py-16 lg:py-20 border-t border-white/10">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold">You don't need more data. You need clarity.</h2>
+      {/* PROBLEM / PROMISE */}
+      <section className="py-16 lg:py-20 border-t border-white/10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl sm:text-3xl font-bold">You don't need more data. You need <span className="text-brand-orange" style={{ fontFamily: "'Nexa Trial', sans-serif" }}>clarity</span>.</h2>
             <p className="mt-4 text-white/75 max-w-3xl">
               Most traders juggle charts, news feeds, and indicators yet still wonder <em>why</em> price moved. Tracr brings it all together — turning complex signals into a simple, AI-powered story you can act on.
             </p>
@@ -221,7 +218,9 @@ const Index = () => {
         {/* FEATURES */}
         <section id="features" className="py-16 lg:py-20 border-t border-white/10">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-bold text-center">Why traders choose Tracr AI</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-center" style={{ fontFamily: "'Nexa Trial', sans-serif" }}>
+              <span className="text-brand-orange">Why</span> traders choose Tracr AI
+            </h2>
             <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
               {[
                 { title: "AI Candle Insights", desc: "Instant explanations for price moves — in plain English." },

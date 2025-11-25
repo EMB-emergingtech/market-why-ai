@@ -49,6 +49,12 @@ export default {
         aqua: {
           500: "hsl(var(--aqua))",
         },
+        brand: {
+          orange: "hsl(var(--brand-orange))",
+        },
+        blue: {
+          light: "hsl(var(--blue-light))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
