@@ -41,7 +41,7 @@ const Index = () => {
   }, [popupOpen]);
 
   return (
-    <div className="min-h-screen bg-ink-900 text-white">
+    <div className="min-h-screen page-gradient text-white">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-ink-900/80 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -264,12 +264,12 @@ const Index = () => {
                 { quote: "Clarity in seconds. No hype — just useful context.", author: "Crypto user — Bristol" },
               ].map((testimonial, i) => (
                 <div key={i} className="testimonial-card">
-                  <p className="text-white/85">"{testimonial.quote}"</p>
-                  <div className="mt-3 text-sm text-white/60">{testimonial.author}</div>
+                  <p className="text-white/90 text-sm font-medium">"{testimonial.quote}"</p>
+                  <div className="mt-auto pt-3 text-sm text-white/70 font-semibold">{testimonial.author}</div>
                 </div>
               ))}
             </div>
-            <div className="mt-10 text-center">
+            <div className="mt-8 text-center">
               <a href="#cta" className="inline-block btn-primary">
                 See More
               </a>
