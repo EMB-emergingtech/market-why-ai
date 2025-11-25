@@ -127,4 +127,43 @@ All colors MUST be HSL.
   .hero-gradient-bg {
     background: linear-gradient(135deg, #021746 0%, #0D3E9A 60%, #5BBEFF 100%);
   }
+  
+  /* Interactive cards with hover states */
+  .feature-card {
+    @apply card-glass rounded-xl p-5 transition-all duration-300 cursor-pointer;
+  }
+  
+  .feature-card:hover {
+    background: linear-gradient(135deg, #021746 0%, #0D3E9A 100%);
+    box-shadow: 0px 0px 12px rgba(91, 190, 255, 0.35);
+    transform: scale(1.02);
+  }
+  
+  .feature-card .card-icon,
+  .feature-card .card-title {
+    color: #FF6A39;
+    transition: color 0.3s ease;
+  }
+  
+  .feature-card:hover .card-icon,
+  .feature-card:hover .card-title {
+    color: #5BBEFF;
+  }
+  
+  /* Demo cards equal sizing */
+  .demo-card {
+    @apply card-glass rounded-2xl p-6 shadow-[0_10px_30px_rgba(0,0,0,0.35)];
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Testimonial cards equal sizing */
+  .testimonial-card {
+    @apply glass rounded-xl p-5;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

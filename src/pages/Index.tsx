@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight, Layers, Lightbulb, Zap, Sparkles, MessageSquare, TrendingUp, Globe, Shield } from "lucide-react";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -141,16 +141,19 @@ const Index = () => {
               Most traders juggle charts, news feeds, and indicators yet still wonder <em>why</em> price moved. Tracr brings it all together — turning complex signals into a simple, AI-powered story you can act on.
             </p>
             <div className="mt-8 grid sm:grid-cols-3 gap-4">
-              <div className="card-glass rounded-xl p-5">
-                <div className="text-accent-500 font-semibold mb-1">Less tab-hopping</div>
+              <div className="feature-card">
+                <Layers className="w-8 h-8 mb-3 card-icon" />
+                <div className="font-semibold mb-1 card-title">Less tab-hopping</div>
                 <p className="text-white/75 text-sm">Stop switching between tools to connect the dots.</p>
               </div>
-              <div className="card-glass rounded-xl p-5">
-                <div className="text-accent-500 font-semibold mb-1">Know the <span className="text-brand-orange">"why"</span></div>
+              <div className="feature-card">
+                <Lightbulb className="w-8 h-8 mb-3 card-icon" />
+                <div className="font-semibold mb-1 card-title">Know the "why"</div>
                 <p className="text-white/75 text-sm">Combine price action, fundamentals, and sentiment in one view.</p>
               </div>
-              <div className="card-glass rounded-xl p-5">
-                <div className="text-accent-500 font-semibold mb-1">Decide faster</div>
+              <div className="feature-card">
+                <Zap className="w-8 h-8 mb-3 card-icon" />
+                <div className="font-semibold mb-1 card-title">Decide faster</div>
                 <p className="text-white/75 text-sm">Instant plain-English explanation and what to watch next.</p>
               </div>
             </div>
@@ -162,19 +165,22 @@ const Index = () => {
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-center">From chaos to clarity in three steps</h2>
             <div className="mt-10 grid lg:grid-cols-3 gap-6">
-              <div className="card-glass rounded-xl p-6">
+              <div className="feature-card">
+                <TrendingUp className="w-10 h-10 mb-3 card-icon" />
                 <div className="text-white/60 text-sm mb-2">Step 1</div>
-                <h3 className="font-semibold mb-2">Select a stock or pair</h3>
+                <h3 className="font-semibold mb-2 card-title">Select a stock or pair</h3>
                 <p className="text-white/75 text-sm">Choose from top US equities, major forex pairs, and leading crypto assets.</p>
               </div>
-              <div className="card-glass rounded-xl p-6">
+              <div className="feature-card">
+                <Sparkles className="w-10 h-10 mb-3 card-icon" />
                 <div className="text-white/60 text-sm mb-2">Step 2</div>
-                <h3 className="font-semibold mb-2">AI reads the market</h3>
+                <h3 className="font-semibold mb-2 card-title">AI reads the market</h3>
                 <p className="text-white/75 text-sm">Tracr analyses price action, news sentiment, and fundamentals in seconds.</p>
               </div>
-              <div className="card-glass rounded-xl p-6">
+              <div className="feature-card">
+                <Lightbulb className="w-10 h-10 mb-3 card-icon" />
                 <div className="text-white/60 text-sm mb-2">Step 3</div>
-                <h3 className="font-semibold mb-2">Get the "why" & next watch</h3>
+                <h3 className="font-semibold mb-2 card-title">Get the "why" & next watch</h3>
                 <p className="text-white/75 text-sm">Plain-English insight — plus key levels and factors to monitor.</p>
               </div>
             </div>
@@ -191,18 +197,18 @@ const Index = () => {
         <section id="demo" className="py-16 lg:py-20 border-t border-white/10">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold">See what AI-powered clarity looks like</h2>
-            <div className="mt-6 grid lg:grid-cols-3 gap-6 items-start">
-              <div className="lg:col-span-2 card-glass rounded-2xl p-4 lg:p-6 shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
-                <div className="aspect-video rounded-xl bg-ink-800 border border-white/10 flex items-center justify-center p-6">
-                  <div className="text-white/60 text-sm sm:text-base text-center">
+            <div className="mt-6 grid lg:grid-cols-2 gap-6 items-stretch">
+              <div className="demo-card">
+                <div className="aspect-video rounded-xl bg-ink-800 border border-white/10 flex items-center justify-center flex-1">
+                  <div className="text-white/60 text-sm sm:text-base text-center p-6">
                     <div className="mb-2 font-semibold text-white/90">Demo video placeholder</div>
                     <p>Drop your product screencast here (MP4/WebM) or embed YouTube.</p>
                   </div>
                 </div>
               </div>
-              <div className="card-glass rounded-2xl p-6">
+              <div className="demo-card">
                 <h3 className="font-semibold">What you'll see</h3>
-                <ul className="mt-3 space-y-3 text-white/75 text-sm list-disc list-inside">
+                <ul className="mt-3 space-y-3 text-white/75 text-sm list-disc list-inside flex-1">
                   <li>Drag across candles → generate AI explanation</li>
                   <li>Summary, news sentiment & fundamentals in one view</li>
                   <li>Next watch: key levels & risk cues (non-advisory)</li>
@@ -223,17 +229,21 @@ const Index = () => {
             </h2>
             <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
               {[
-                { title: "AI Candle Insights", desc: "Instant explanations for price moves — in plain English." },
-                { title: "AI Chatbot", desc: "Ask context-aware questions on the chart." },
-                { title: "Pattern Recognition (v2)", desc: "Spot historical setups that mirror today's move." },
-                { title: "US-Market Focus", desc: "Designed for UK traders investing in the US." },
-                { title: "Compliance-First", desc: "Non-advisory insights; GDPR-respecting data." },
-              ].map((feature, i) => (
-                <div key={i} className="card-glass rounded-xl p-5">
-                  <div className="text-accent-500 font-semibold mb-1">{feature.title}</div>
-                  <p className="text-white/75 text-sm">{feature.desc}</p>
-                </div>
-              ))}
+                { title: "AI Candle Insights", desc: "Instant explanations for price moves — in plain English.", icon: Sparkles },
+                { title: "AI Chatbot", desc: "Ask context-aware questions on the chart.", icon: MessageSquare },
+                { title: "Pattern Recognition (v2)", desc: "Spot historical setups that mirror today's move.", icon: TrendingUp },
+                { title: "US-Market Focus", desc: "Designed for UK traders investing in the US.", icon: Globe },
+                { title: "Compliance-First", desc: "Non-advisory insights; GDPR-respecting data.", icon: Shield },
+              ].map((feature, i) => {
+                const IconComponent = feature.icon;
+                return (
+                  <div key={i} className="feature-card">
+                    <IconComponent className="w-8 h-8 mb-2 card-icon" />
+                    <div className="font-semibold mb-1 card-title">{feature.title}</div>
+                    <p className="text-white/75 text-sm">{feature.desc}</p>
+                  </div>
+                );
+              })}
             </div>
             <div className="mt-10 text-center">
               <a href="#cta" className="inline-block btn-secondary">
@@ -253,7 +263,7 @@ const Index = () => {
                 { quote: "Feels like having a personal market analyst on the chart.", author: "Trader — Manchester" },
                 { quote: "Clarity in seconds. No hype — just useful context.", author: "Crypto user — Bristol" },
               ].map((testimonial, i) => (
-                <div key={i} className="glass rounded-xl p-5">
+                <div key={i} className="testimonial-card">
                   <p className="text-white/85">"{testimonial.quote}"</p>
                   <div className="mt-3 text-sm text-white/60">{testimonial.author}</div>
                 </div>
@@ -261,7 +271,7 @@ const Index = () => {
             </div>
             <div className="mt-10 text-center">
               <a href="#cta" className="inline-block btn-primary">
-                Start Free Trial
+                See More
               </a>
             </div>
           </div>
