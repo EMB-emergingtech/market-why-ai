@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { Menu, X, ArrowRight, Layers, Lightbulb, Zap, Sparkles, MessageSquare, TrendingUp, Globe, Shield, Star, User, Check } from "lucide-react";
+import { Menu, X, ArrowRight, Layers, Lightbulb, Zap, Sparkles, MessageSquare, TrendingUp, Globe, Shield, Star, User, Check, ChevronRight } from "lucide-react";
 import step1Illustration from "@/assets/step-1-illustration.png";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -495,19 +496,38 @@ const Index = () => {
         <section id="faq" className="py-16 lg:py-20 border-t border-white/10">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold">Common questions</h2>
-            <div className="mt-8 grid md:grid-cols-2 gap-6">
+            <Accordion 
+              type="multiple" 
+              defaultValue={["item-0", "item-1", "item-3"]}
+              className="mt-8 space-y-4"
+            >
               {[
                 { q: "Is this financial advice?", a: "No. Tracr explains why markets moved, but does not provide trading signals or recommendations." },
                 { q: "Do I need experience?", a: "No. Tracr is built for both beginners and experienced traders who want faster clarity." },
                 { q: "What markets are covered?", a: "Major US equities, key USD forex pairs, and select cryptocurrencies — expanding over time." },
                 { q: "Can I cancel anytime?", a: "Yes. Free trial first, then flexible plans with no lock-ins." },
               ].map((faq, i) => (
-                <div key={i} className="card-glass rounded-xl p-6">
-                  <h4 className="font-semibold">{faq.q}</h4>
-                  <p className="text-white/75 text-sm mt-2">{faq.a}</p>
-                </div>
+                <AccordionItem 
+                  key={i} 
+                  value={`item-${i}`}
+                  className="rounded-[14px] px-[22px] py-[18px] border-0 data-[state=closed]:shadow-[0px_8px_24px_rgba(4,34,78,0.40)] data-[state=open]:shadow-[0px_12px_30px_rgba(4,34,78,0.50)] transition-all duration-[280ms]"
+                  style={{
+                    background: 'linear-gradient(180deg, #021746 0%, #06265E 100%)',
+                  }}
+                >
+                  <AccordionTrigger 
+                    className="font-semibold text-[#E6ECF5] hover:no-underline py-0 [&[data-state=open]]:pb-3 focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-[rgba(91,190,255,0.14)] rounded-md transition-all duration-[180ms] [&>svg]:transition-transform [&>svg]:duration-[180ms]"
+                  >
+                    {faq.q}
+                  </AccordionTrigger>
+                  <AccordionContent 
+                    className="pt-3 pb-0 text-[#BFD8F0] text-sm leading-[1.5]"
+                  >
+                    {faq.a}
+                  </AccordionContent>
+                </AccordionItem>
               ))}
-            </div>
+            </Accordion>
           </div>
         </section>
       </main>
