@@ -3,6 +3,7 @@ import { Menu, X, ArrowRight, Layers, Lightbulb, Zap, Sparkles, MessageSquare, T
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [testimonialsExpanded, setTestimonialsExpanded] = useState(false);
   const [popupOpen, setPopupOpen] = useState(false);
   const [popupDismissed, setPopupDismissed] = useState(false);
 
@@ -286,10 +287,50 @@ const Index = () => {
                 </div>
               ))}
             </div>
-            <div className="mt-8 text-center">
-              <a href="#cta" className="inline-block btn-primary">
-                See More
-              </a>
+            
+            {/* Additional testimonials - hidden by default */}
+            <div 
+              className={`grid sm:grid-cols-3 gap-6 mt-6 transition-all duration-300 overflow-hidden ${
+                testimonialsExpanded ? 'opacity-100 max-h-[500px]' : 'opacity-0 max-h-0'
+              }`}
+            >
+              {[
+                { quote: "Great context — I use it when I plan my day trades.", author: "Active Trader — Leeds", rating: 5 },
+                { quote: "Makes complex setups simple to read.", author: "Options Trader — Glasgow", rating: 5 },
+                { quote: "Helps me hold positions with more confidence.", author: "Swing Trader — Dublin", rating: 5 },
+              ].map((testimonial, i) => (
+                <div key={`extra-${i}`} className="testimonial-card">
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="w-[50px] h-[50px] rounded-full flex items-center justify-center bg-white/5 flex-shrink-0">
+                      <User className="w-6 h-6" style={{ color: '#C8CCD1' }} />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-semibold text-white text-sm mb-1.5">{testimonial.author}</div>
+                      <div className="flex gap-0.5">
+                        {[...Array(5)].map((_, starIndex) => (
+                          <Star 
+                            key={starIndex} 
+                            className="w-4 h-4" 
+                            fill={starIndex < testimonial.rating ? '#FF6A39' : 'none'}
+                            style={{ color: starIndex < testimonial.rating ? '#FF6A39' : '#C8CCD1' }}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-sm leading-[150%]" style={{ color: '#E6ECF5' }}>"{testimonial.quote}"</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-6 text-center">
+              <button 
+                onClick={() => setTestimonialsExpanded(!testimonialsExpanded)}
+                aria-expanded={testimonialsExpanded}
+                className="inline-flex items-center justify-center px-6 py-2.5 bg-white/5 hover:bg-white/10 border border-white/10 text-white font-medium rounded-lg transition-all duration-200"
+              >
+                {testimonialsExpanded ? 'See Less' : 'See More'}
+              </button>
             </div>
           </div>
         </section>
