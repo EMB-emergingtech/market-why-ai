@@ -160,20 +160,20 @@ All colors MUST be HSL.
   
   /* Testimonial cards equal sizing */
   .testimonial-card {
-    background: linear-gradient(135deg, rgba(13, 62, 154, 0.25) 0%, rgba(2, 23, 70, 0.35) 100%);
+    background: linear-gradient(135deg, #021238 0%, #06256A 100%);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 18px;
+    border-radius: 22px;
     padding: 1.5rem;
-    min-height: 160px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 18px rgba(91, 190, 255, 0.20);
+    box-shadow: 0px 0px 22px rgba(91, 190, 255, 0.20);
     transition: all 0.3s ease;
   }
   
   .testimonial-card:hover {
     transform: scale(1.01);
-    box-shadow: 0px 0px 22px rgba(91, 190, 255, 0.28);
+    box-shadow: 0px 0px 26px rgba(91, 190, 255, 0.35);
   }
   
   /* Page gradient background */

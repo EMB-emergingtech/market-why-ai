@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, ArrowRight, Layers, Lightbulb, Zap, Sparkles, MessageSquare, TrendingUp, Globe, Shield } from "lucide-react";
+import { Menu, X, ArrowRight, Layers, Lightbulb, Zap, Sparkles, MessageSquare, TrendingUp, Globe, Shield, Star, User } from "lucide-react";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -257,15 +257,32 @@ const Index = () => {
         <section id="proof" className="py-16 lg:py-20 border-t border-white/10">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold">Trusted by early traders & market learners</h2>
-            <div className="mt-8 grid sm:grid-cols-3 gap-4">
+            <div className="mt-8 grid sm:grid-cols-3 gap-6">
               {[
-                { quote: "Finally understand why prices move. It changed how I plan entries.", author: "Beta user — London" },
-                { quote: "Feels like having a personal market analyst on the chart.", author: "Trader — Manchester" },
-                { quote: "Clarity in seconds. No hype — just useful context.", author: "Crypto user — Bristol" },
+                { quote: "Finally understand why prices move. It changed how I plan entries.", author: "Beta user — London", rating: 5 },
+                { quote: "Feels like having a personal market analyst on the chart.", author: "Trader — Manchester", rating: 5 },
+                { quote: "Clarity in seconds. No hype — just useful context.", author: "Crypto user — Bristol", rating: 5 },
               ].map((testimonial, i) => (
                 <div key={i} className="testimonial-card">
-                  <p className="text-white/90 text-sm font-medium">"{testimonial.quote}"</p>
-                  <div className="mt-auto pt-3 text-sm text-white/70 font-semibold">{testimonial.author}</div>
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="w-[50px] h-[50px] rounded-full flex items-center justify-center bg-white/5 flex-shrink-0">
+                      <User className="w-6 h-6" style={{ color: '#C8CCD1' }} />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="font-semibold text-white text-sm mb-1.5">{testimonial.author}</div>
+                      <div className="flex gap-0.5">
+                        {[...Array(5)].map((_, starIndex) => (
+                          <Star 
+                            key={starIndex} 
+                            className="w-4 h-4" 
+                            fill={starIndex < testimonial.rating ? '#FF6A39' : 'none'}
+                            style={{ color: starIndex < testimonial.rating ? '#FF6A39' : '#C8CCD1' }}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-sm leading-[150%]" style={{ color: '#E6ECF5' }}>"{testimonial.quote}"</p>
                 </div>
               ))}
             </div>
