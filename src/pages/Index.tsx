@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, ArrowRight, Layers, Lightbulb, Zap, Sparkles, MessageSquare, TrendingUp, Globe, Shield, Star, User } from "lucide-react";
+import { Menu, X, ArrowRight, Layers, Lightbulb, Zap, Sparkles, MessageSquare, TrendingUp, Globe, Shield, Star, User, Check } from "lucide-react";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -339,27 +339,98 @@ const Index = () => {
         <section id="pricing" className="py-16 lg:py-20 border-t border-white/10">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-center">Choose how you want to start</h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-6">
-              <div className="card-glass rounded-2xl p-6">
-                <h3 className="font-semibold text-lg">Free Trial</h3>
-                <p className="text-white/75 text-sm mt-2">14 days · No card required · Full access</p>
-                <a href="#cta" className="mt-6 inline-block btn-primary w-full text-center">
-                  Start Free Trial
-                </a>
-              </div>
-              <div id="offer" className="card-glass rounded-2xl p-6 border-accent-500/40">
-                <h3 className="font-semibold text-lg">Vantage Offer</h3>
-                <p className="text-white/75 text-sm mt-2">Deposit $500 with Vantage → Get 1-year Tracr free</p>
-                <a href="#cta" className="mt-6 inline-block btn-secondary w-full text-center">
+            <div className="mt-10 grid md:grid-cols-3 gap-6 items-center">
+              {/* FREE PLAN */}
+              <div className="pricing-card">
+                <Sparkles className="pricing-sparkles" style={{ color: '#FFFFFF' }} />
+                <h3 className="font-bold text-xl text-white mb-2">Free</h3>
+                <div className="mb-6">
+                  <span className="font-bold text-3xl text-white">Rs. 0</span>
+                  <span className="text-white/70 text-sm ml-1">/month</span>
+                </div>
+                <ul className="space-y-3 mb-8 flex-grow">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>14-day free trial</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>AI candle insights</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Basic pattern recognition</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Limited daily queries</span>
+                  </li>
+                </ul>
+                <button className="pricing-btn-filled w-full">
                   Register via Vantage
-                </a>
+                </button>
               </div>
-              <div className="card-glass rounded-2xl p-6">
-                <h3 className="font-semibold text-lg">Pro Subscription</h3>
-                <p className="text-white/75 text-sm mt-2">Unlimited insights · Priority updates</p>
-                <a href="#cta" className="mt-6 inline-block btn-secondary w-full text-center">
+
+              {/* VANTAGE OFFER - EMPHASIZED */}
+              <div id="offer" className="pricing-card pricing-card-emphasized">
+                <div className="pricing-badge">Most popular</div>
+                <h3 className="font-bold text-xl text-white mb-2">Vantage Offer</h3>
+                <div className="mb-6">
+                  <span className="font-bold text-3xl text-white">Rs. 499</span>
+                  <span className="text-white/70 text-sm ml-1">/month</span>
+                </div>
+                <ul className="space-y-3 mb-8 flex-grow">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Deposit $500 with Vantage</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Get 1 year Tracr AI free</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Unlimited AI insights</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Priority support</span>
+                  </li>
+                </ul>
+                <button className="pricing-btn-outline w-full">
+                  Register via Vantage
+                </button>
+              </div>
+
+              {/* PRO SUBSCRIPTION */}
+              <div className="pricing-card">
+                <Sparkles className="pricing-sparkles" style={{ color: '#FFFFFF' }} />
+                <h3 className="font-bold text-xl text-white mb-2">Pro Subscription</h3>
+                <div className="mb-6">
+                  <span className="font-bold text-3xl text-white">Rs. 999</span>
+                  <span className="text-white/70 text-sm ml-1">/month</span>
+                </div>
+                <ul className="space-y-3 mb-8 flex-grow">
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Unlimited AI insights</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Advanced pattern recognition</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Priority updates</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Premium support</span>
+                  </li>
+                </ul>
+                <button className="pricing-btn-outline w-full">
                   View Plans
-                </a>
+                </button>
               </div>
             </div>
           </div>
