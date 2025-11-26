@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight, Layers, Lightbulb, Zap, Sparkles, MessageSquare, TrendingUp, Globe, Shield, Star, User, Check } from "lucide-react";
+import step1Illustration from "@/assets/step-1-illustration.png";
 
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -167,7 +168,12 @@ const Index = () => {
             <h2 className="text-2xl sm:text-3xl font-bold text-center">From chaos to clarity in three steps</h2>
             <div className="mt-10 grid lg:grid-cols-3 gap-6">
               <div className="feature-card">
-                <TrendingUp className="w-10 h-10 mb-3 card-icon" />
+                <img 
+                  src={step1Illustration} 
+                  alt="Select a stock or pair illustration" 
+                  className="h-[130px] w-auto mx-auto mb-5 object-contain"
+                  style={{ filter: 'drop-shadow(0px 0px 18px rgba(91, 190, 255, 0.30))' }}
+                />
                 <div className="text-white/60 text-sm mb-2">Step 1</div>
                 <h3 className="font-semibold mb-2 card-title">Select a stock or pair</h3>
                 <p className="text-white/75 text-sm">Choose from top US equities, major forex pairs, and leading crypto assets.</p>
