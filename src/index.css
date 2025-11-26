@@ -176,6 +176,88 @@ All colors MUST be HSL.
     box-shadow: 0px 0px 26px rgba(91, 190, 255, 0.35);
   }
   
+  /* Pricing cards */
+  .pricing-card {
+    border-radius: 22px;
+    background: linear-gradient(180deg, #021746 0%, #06265E 100%);
+    box-shadow: 0px 8px 30px rgba(4, 34, 78, 0.45), inset 0px 1px 0px rgba(255, 255, 255, 0.05);
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pricing-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 12px 34px rgba(13, 62, 154, 0.45), inset 0px 1px 0px rgba(255, 255, 255, 0.05);
+  }
+  
+  .pricing-card-emphasized {
+    background: linear-gradient(180deg, #0D3E9A 0%, #021746 100%);
+    transform: scale(1.05);
+  }
+  
+  .pricing-card-emphasized:hover {
+    transform: scale(1.07);
+  }
+  
+  .pricing-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: #FF6A39;
+    color: #FFFFFF;
+    padding: 6px 10px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .pricing-sparkles {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.15;
+  }
+  
+  .pricing-btn-filled {
+    background: linear-gradient(90deg, #0D3E9A 0%, #5BBEFF 100%);
+    color: #FFFFFF;
+    border-radius: 14px;
+    padding: 10px 22px;
+    box-shadow: 0px 6px 18px rgba(13, 62, 154, 0.35);
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .pricing-btn-filled:hover {
+    box-shadow: 0px 8px 22px rgba(13, 62, 154, 0.5);
+    transform: translateY(-2px);
+  }
+  
+  .pricing-btn-outline {
+    border: 1.5px solid #5BBEFF;
+    color: #5BBEFF;
+    background: transparent;
+    border-radius: 14px;
+    padding: 10px 22px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .pricing-btn-outline:hover {
+    background: linear-gradient(90deg, #0D3E9A 0%, #5BBEFF 100%);
+    color: #FFFFFF;
+    box-shadow: 0px 6px 18px rgba(13, 62, 154, 0.35);
+  }
+  
   /* Page gradient background */
   .page-gradient {
     background: linear-gradient(135deg, #010A43 0%, #021746 40%, #0D3E9A 100%);
