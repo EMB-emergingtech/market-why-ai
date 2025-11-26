@@ -167,16 +167,25 @@ const Index = () => {
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-center">From chaos to clarity in three steps</h2>
             <div className="mt-10 grid lg:grid-cols-3 gap-6">
-              <div className="feature-card">
-                <img 
-                  src={step1Illustration} 
-                  alt="Select a stock or pair illustration" 
-                  className="h-[130px] w-auto mx-auto mb-5 object-contain"
-                  style={{ filter: 'drop-shadow(0px 0px 18px rgba(91, 190, 255, 0.30))' }}
-                />
+              <div className="feature-card text-center">
+                <div 
+                  className="rounded-[20px] flex items-center justify-center mb-6 mx-auto"
+                  style={{
+                    background: 'linear-gradient(180deg, #021746 0%, #06265E 100%)',
+                    height: '200px',
+                    maxWidth: '100%'
+                  }}
+                >
+                  <img 
+                    src={step1Illustration} 
+                    alt="Select a stock or pair illustration" 
+                    className="h-[150px] w-auto object-contain"
+                    style={{ filter: 'drop-shadow(0px 0px 18px rgba(91, 190, 255, 0.30))' }}
+                  />
+                </div>
                 <div className="text-white/60 text-sm mb-2">Step 1</div>
-                <h3 className="font-semibold mb-2 card-title">Select a stock or pair</h3>
-                <p className="text-white/75 text-sm">Choose from top US equities, major forex pairs, and leading crypto assets.</p>
+                <h3 className="font-bold mb-3 text-[#FF6A39]">Select a stock or pair</h3>
+                <p className="text-white/75 text-sm leading-relaxed">Choose from top US equities, major forex pairs, and leading crypto assets.</p>
               </div>
               <div className="feature-card">
                 <Sparkles className="w-10 h-10 mb-3 card-icon" />
