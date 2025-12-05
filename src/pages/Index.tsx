@@ -253,10 +253,11 @@ const Index = () => {
                 return (
                   <div 
                     key={i} 
-                    className="group w-[200px] min-h-[180px] rounded-[22px] p-5 flex flex-col transition-all duration-300 hover:scale-[1.03] cursor-pointer"
+                    className="group w-[280px] h-[170px] rounded-[24px] flex flex-col justify-center transition-all duration-300 hover:scale-[1.03] cursor-pointer"
                     style={{
                       background: 'linear-gradient(180deg, #021746 0%, #06265E 100%)',
                       boxShadow: '0px 10px 28px rgba(4, 34, 78, 0.45)',
+                      padding: '28px 32px',
                     }}
                     onMouseEnter={(e) => {
                       e.currentTarget.style.background = 'linear-gradient(180deg, #0D3E9A 0%, #021746 100%)';
