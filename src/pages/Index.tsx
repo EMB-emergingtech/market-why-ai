@@ -124,11 +124,15 @@ const Index = () => {
               </div>
               
               <div className="card-glass rounded-2xl p-4 lg:p-6 shadow-[0_10px_30px_rgba(0,0,0,0.35)]">
-                <div className="aspect-video rounded-xl bg-ink-800 border border-white/10 flex items-center justify-center p-6">
-                  <div className="text-white/60 text-sm sm:text-base text-center">
-                    <div className="mb-3 font-semibold text-white/90">Product demo placeholder</div>
-                    <p>Embed a 20–30s screen recording: select candles → generate → AI explanation appears.</p>
-                  </div>
+                <div className="aspect-video rounded-xl overflow-hidden">
+                  <iframe
+                    className="w-full h-full rounded-xl"
+                    src="https://www.youtube.com/embed/ytu2NElfQzY?rel=0"
+                    title="Tracr AI Product Demo"
+                    frameBorder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               </div>
             </div>
@@ -246,11 +250,15 @@ const Index = () => {
             <h2 className="text-2xl sm:text-3xl font-bold">See what AI-powered clarity looks like</h2>
             <div className="mt-6 grid lg:grid-cols-2 gap-6 items-stretch">
               <div className="demo-card">
-                <div className="aspect-video rounded-xl bg-ink-800 border border-white/10 flex items-center justify-center flex-1">
-                  <div className="text-white/60 text-sm sm:text-base text-center p-6">
-                    <div className="mb-2 font-semibold text-white/90">Demo video placeholder</div>
-                    <p>Drop your product screencast here (MP4/WebM) or embed YouTube.</p>
-                  </div>
+                <div className="aspect-video rounded-xl overflow-hidden flex-1">
+                  <iframe
+                    className="w-full h-full rounded-xl"
+                    src="https://www.youtube.com/embed/tFXgOj9Z_5w?rel=0"
+                    title="Tracr AI Demo"
+                    frameBorder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               </div>
               <div className="demo-card">
