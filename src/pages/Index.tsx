@@ -128,9 +128,6 @@ const Index = () => {
                     <p>Embed a 20–30s screen recording: select candles → generate → AI explanation appears.</p>
                   </div>
                 </div>
-                <div className="mt-4 text-white/70 text-sm">
-                  Example insight: <span className="text-white">"Walmart up 5% on e-commerce growth and positive sentiment; watch 110 support."</span>
-                </div>
               </div>
             </div>
           </div>
@@ -244,20 +241,43 @@ const Index = () => {
             <h2 className="text-2xl sm:text-3xl font-bold text-center">
               <span className="text-brand-orange">Why</span> traders choose Tracr AI
             </h2>
-            <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div className="mt-10 flex flex-wrap justify-center gap-5">
               {[
-                { title: "AI Candle Insights", desc: "Instant explanations for price moves — in plain English.", icon: Sparkles },
-                { title: "AI Chatbot", desc: "Ask context-aware questions on the chart.", icon: MessageSquare },
-                { title: "Pattern Recognition (v2)", desc: "Spot historical setups that mirror today's move.", icon: TrendingUp },
-                { title: "US-Market Focus", desc: "Designed for UK traders investing in the US.", icon: Globe },
-                { title: "Compliance-First", desc: "Non-advisory insights; GDPR-respecting data.", icon: Shield },
+                { title: "AI Candle Insights", desc: "Instant explanations for price moves — in plain English.", icon: Sparkles, highlight: false },
+                { title: "AI Chatbot", desc: "Ask context-aware questions on the chart.", icon: MessageSquare, highlight: false },
+                { title: "Pattern Recognition", desc: "Spot historical setups that mirror today's move.", icon: TrendingUp, highlight: true },
+                { title: "US-Market Focus", desc: "Designed for UK traders investing in the US.", icon: Globe, highlight: false },
+                { title: "Compliance-First", desc: "Non-advisory insights; GDPR-respecting data.", icon: Shield, highlight: false },
               ].map((feature, i) => {
                 const IconComponent = feature.icon;
                 return (
-                  <div key={i} className="feature-card">
-                    <IconComponent className="w-8 h-8 mb-2 card-icon" />
-                    <div className="font-semibold mb-1 card-title">{feature.title}</div>
-                    <p className="text-white/75 text-sm">{feature.desc}</p>
+                  <div 
+                    key={i} 
+                    className="group w-[200px] min-h-[180px] rounded-[22px] p-5 flex flex-col transition-all duration-300 hover:scale-[1.03] cursor-pointer"
+                    style={{
+                      background: 'linear-gradient(180deg, #021746 0%, #06265E 100%)',
+                      boxShadow: '0px 10px 28px rgba(4, 34, 78, 0.45)',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.background = 'linear-gradient(180deg, #0D3E9A 0%, #021746 100%)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.background = 'linear-gradient(180deg, #021746 0%, #06265E 100%)';
+                    }}
+                  >
+                    <div className="flex items-center gap-2 mb-3">
+                      <IconComponent 
+                        className="w-6 h-6 flex-shrink-0" 
+                        style={{ color: feature.highlight ? '#5BBEFF' : '#FF6A39' }}
+                      />
+                      <div 
+                        className="font-semibold text-sm"
+                        style={{ color: feature.highlight ? '#5BBEFF' : '#FF6A39' }}
+                      >
+                        {feature.title}
+                      </div>
+                    </div>
+                    <p className="text-[#BFD8F0] text-xs leading-relaxed">{feature.desc}</p>
                   </div>
                 );
               })}
