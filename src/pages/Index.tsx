@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight, Layers, Lightbulb, Zap, Sparkles, MessageSquare, TrendingUp, Globe, Shield, Star, User, Check, ChevronRight } from "lucide-react";
 import step1Illustration from "@/assets/step-1-illustration.png";
+import step2Illustration from "@/assets/step-2-illustration.png";
+import step3Illustration from "@/assets/step-3-illustration.png";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const Index = () => {
@@ -167,17 +169,18 @@ const Index = () => {
             <div className="mt-10 grid lg:grid-cols-3 gap-6">
               <div className="feature-card text-center">
                 <div 
-                  className="rounded-[20px] flex items-center justify-center mb-6 mx-auto"
+                  className="rounded-[20px] flex items-center justify-center mx-auto"
                   style={{
                     background: 'linear-gradient(180deg, #021746 0%, #06265E 100%)',
-                    height: '200px',
-                    maxWidth: '100%'
+                    height: '180px',
+                    maxWidth: '100%',
+                    marginBottom: '22px'
                   }}
                 >
                   <img 
                     src={step1Illustration} 
                     alt="Select a stock or pair illustration" 
-                    className="h-[150px] w-auto object-contain"
+                    className="h-[170px] w-auto object-contain"
                     style={{ filter: 'drop-shadow(0px 0px 18px rgba(91, 190, 255, 0.30))' }}
                   />
                 </div>
@@ -185,14 +188,44 @@ const Index = () => {
                 <h3 className="font-bold mb-3 text-[#FF6A39]">Select a stock or pair</h3>
                 <p className="text-white/75 text-sm leading-relaxed">Choose from top US equities, major forex pairs, and leading crypto assets.</p>
               </div>
-              <div className="feature-card">
-                <Sparkles className="w-10 h-10 mb-3 card-icon" />
+              <div className="feature-card text-center">
+                <div 
+                  className="rounded-[20px] flex items-center justify-center mx-auto"
+                  style={{
+                    background: 'linear-gradient(180deg, #021746 0%, #06265E 100%)',
+                    height: '180px',
+                    maxWidth: '100%',
+                    marginBottom: '22px'
+                  }}
+                >
+                  <img 
+                    src={step2Illustration} 
+                    alt="AI reads the market illustration" 
+                    className="h-[170px] w-auto object-contain"
+                    style={{ filter: 'drop-shadow(0px 0px 18px rgba(91, 190, 255, 0.30))' }}
+                  />
+                </div>
                 <div className="text-white/60 text-sm mb-2">Step 2</div>
                 <h3 className="font-semibold mb-2 card-title">AI reads the market</h3>
                 <p className="text-white/75 text-sm">Tracr analyses price action, news sentiment, and fundamentals in seconds.</p>
               </div>
-              <div className="feature-card">
-                <Lightbulb className="w-10 h-10 mb-3 card-icon" />
+              <div className="feature-card text-center">
+                <div 
+                  className="rounded-[20px] flex items-center justify-center mx-auto"
+                  style={{
+                    background: 'linear-gradient(180deg, #021746 0%, #06265E 100%)',
+                    height: '180px',
+                    maxWidth: '100%',
+                    marginBottom: '22px'
+                  }}
+                >
+                  <img 
+                    src={step3Illustration} 
+                    alt="Get the why and next watch illustration" 
+                    className="h-[170px] w-auto object-contain"
+                    style={{ filter: 'drop-shadow(0px 0px 18px rgba(91, 190, 255, 0.30))' }}
+                  />
+                </div>
                 <div className="text-white/60 text-sm mb-2">Step 3</div>
                 <h3 className="font-semibold mb-2 card-title">Get the "why" & next watch</h3>
                 <p className="text-white/75 text-sm">Plain-English insight — plus key levels and factors to monitor.</p>
