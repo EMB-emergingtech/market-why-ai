@@ -237,11 +237,11 @@ const Index = () => {
 
         {/* FEATURES */}
         <section id="features" className="py-16 lg:py-20 border-t border-white/10">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="mx-auto px-4 sm:px-6" style={{ maxWidth: '1550px' }}>
             <h2 className="text-2xl sm:text-3xl font-bold text-center">
               <span className="text-brand-orange">Why</span> traders choose Tracr AI
             </h2>
-            <div className="mt-10 flex flex-wrap justify-center gap-5">
+            <div className="mt-10 flex flex-wrap xl:flex-nowrap justify-center xl:justify-between items-stretch gap-5">
               {[
                 { title: "AI Candle Insights", desc: "Instant explanations for price moves — in plain English.", icon: Sparkles, highlight: false },
                 { title: "AI Chatbot", desc: "Ask context-aware questions on the chart.", icon: MessageSquare, highlight: false },
@@ -253,7 +253,7 @@ const Index = () => {
                 return (
                   <div 
                     key={i} 
-                    className="group w-[280px] h-[170px] rounded-[24px] flex flex-col justify-center transition-all duration-300 hover:scale-[1.03] cursor-pointer"
+                    className="group w-[280px] xl:w-[calc(20%-16px)] h-[170px] rounded-[24px] flex flex-col justify-center transition-all duration-300 hover:scale-[1.03] cursor-pointer"
                     style={{
                       background: 'linear-gradient(180deg, #021746 0%, #06265E 100%)',
                       boxShadow: '0px 10px 28px rgba(4, 34, 78, 0.45)',
