@@ -3,6 +3,7 @@ import { Menu, X, ArrowRight, Layers, Lightbulb, Zap, Sparkles, MessageSquare, T
 import step1Illustration from "@/assets/step-1-illustration.png";
 import step2Illustration from "@/assets/step-2-illustration.png";
 import step3Illustration from "@/assets/step-3-illustration.png";
+import tracrLogo from "@/assets/tracr-logo.png";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const Index = () => {
@@ -52,9 +53,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <a href="#top" className="flex items-center gap-3 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent-400 to-accent-600 flex items-center justify-center font-bold text-sm">
-                T
-              </div>
+              <img src={tracrLogo} alt="tracr logo" className="w-8 h-8 rounded-lg object-cover" />
               <span className="font-semibold tracking-wide">tracr AI</span>
             </a>
             
