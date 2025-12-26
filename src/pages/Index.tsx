@@ -55,7 +55,7 @@ const Index = () => {
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent-400 to-accent-600 flex items-center justify-center font-bold text-sm">
                 T
               </div>
-              <span className="font-semibold tracking-wide">Tracr AI</span>
+              <span className="font-semibold tracking-wide">tracr AI</span>
             </a>
             
             <nav className="hidden md:flex items-center gap-8 text-sm">
@@ -67,9 +67,6 @@ const Index = () => {
             </nav>
             
             <div className="hidden md:flex items-center gap-3">
-              <a href="#offer" className="btn-cta-outline text-sm">
-                Vantage Offer
-              </a>
               <a href="#cta" className="btn-cta-gradient text-sm">
                 Start Free Trial
               </a>
@@ -93,7 +90,6 @@ const Index = () => {
               <a href="#proof" className="block px-3 py-2 rounded hover:bg-white/5" onClick={() => setMobileMenuOpen(false)}>Proof</a>
               <a href="#pricing" className="block px-3 py-2 rounded hover:bg-white/5" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
               <a href="#faq" className="block px-3 py-2 rounded hover:bg-white/5" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
-              <a href="#offer" className="block px-3 py-2 rounded hover:bg-white/5" onClick={() => setMobileMenuOpen(false)}>Vantage Offer</a>
               <a href="#cta" className="block px-3 py-2 rounded bg-accent-500 hover:bg-accent-600 text-center" onClick={() => setMobileMenuOpen(false)}>Start Free Trial</a>
             </nav>
           </div>
@@ -112,11 +108,11 @@ const Index = () => {
                   AI that explains <span className="text-brand-orange">why</span> the market moves — not just what happens.
                 </h1>
                 <p className="mt-5 text-white/80 text-lg max-w-xl">
-                  Tracr AI combines real-time price action, sentiment, and fundamentals to tell you the story behind every US market move — so you can trade with clarity and confidence.
+                  tracr AI combines real-time price action, sentiment, and fundamentals to tell you the story behind every market move — so you can trade with clarity and confidence.
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row gap-3">
                   <a href="#cta" className="btn-primary text-center">Start Free Trial</a>
-                  <a href="#offer" className="btn-secondary text-center">Register via Vantage (1-year free)</a>
+                  <a href="#pricing" className="btn-secondary text-center">View Pricing</a>
                 </div>
                 <div className="mt-4 text-sm text-white/60">
                   No credit card required · Non-advisory insights · Built for UK traders
@@ -128,7 +124,7 @@ const Index = () => {
                   <iframe
                     className="w-full h-full rounded-xl"
                     src="https://www.youtube.com/embed/ytu2NElfQzY?rel=0"
-                    title="Tracr AI Product Demo"
+                    title="tracr AI Product Demo"
                     frameBorder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -144,7 +140,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-bold">You don't need more data. You need clarity.</h2>
             <p className="mt-4 text-white/75 max-w-3xl">
-              Most traders juggle charts, news feeds, and indicators yet still wonder <em>why</em> price moved. Tracr brings it all together — turning complex signals into a simple, AI-powered story you can act on.
+              Most traders juggle charts, news feeds, and indicators yet still wonder <em>why</em> price moved. tracr brings it all together — turning complex signals into a simple, AI-powered story you can act on.
             </p>
             <div className="mt-8 grid sm:grid-cols-3 gap-4">
               <div className="feature-card">
@@ -190,7 +186,7 @@ const Index = () => {
                 </div>
                 <div className="text-white/60 text-sm mb-2">Step 1</div>
                 <h3 className="font-bold mb-3 text-[#FF6A39]">Select a stock or pair</h3>
-                <p className="text-white/75 text-sm leading-relaxed">Choose from top US equities, major forex pairs, and leading crypto assets.</p>
+                <p className="text-white/75 text-sm leading-relaxed">Choose from top equities, major forex pairs, and leading crypto assets.</p>
               </div>
               <div className="feature-card text-center">
                 <div 
@@ -211,7 +207,7 @@ const Index = () => {
                 </div>
                 <div className="text-white/60 text-sm mb-2">Step 2</div>
                 <h3 className="font-semibold mb-2 card-title">AI reads the market</h3>
-                <p className="text-white/75 text-sm">Tracr analyses price action, news sentiment, and fundamentals in seconds.</p>
+                <p className="text-white/75 text-sm">tracr analyses price action, news sentiment, and fundamentals in seconds.</p>
               </div>
               <div className="feature-card text-center">
                 <div 
@@ -237,7 +233,7 @@ const Index = () => {
             </div>
             <div className="mt-10 text-center">
               <a href="#demo" className="inline-flex items-center gap-2 btn-secondary">
-                See Tracr in action
+                See tracr in action
                 <ArrowRight size={18} />
               </a>
             </div>
@@ -254,7 +250,7 @@ const Index = () => {
                   <iframe
                     className="w-full h-full rounded-xl"
                     src="https://www.youtube.com/embed/tFXgOj9Z_5w?rel=0"
-                    title="Tracr AI Demo"
+                    title="tracr AI Demo"
                     frameBorder="0"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -280,14 +276,14 @@ const Index = () => {
         <section id="features" className="py-16 lg:py-20 border-t border-white/10">
           <div className="mx-auto px-4 sm:px-6" style={{ maxWidth: '1550px' }}>
             <h2 className="text-2xl sm:text-3xl font-bold text-center">
-              <span className="text-brand-orange">Why</span> traders choose Tracr AI
+              <span className="text-brand-orange">Why</span> traders choose tracr AI
             </h2>
             <div className="mt-10 flex flex-wrap xl:flex-nowrap justify-center xl:justify-between items-stretch gap-5">
               {[
                 { title: "AI Candle Insights", desc: "Instant explanations for price moves — in plain English.", icon: Sparkles, highlight: false },
                 { title: "AI Chatbot", desc: "Ask context-aware questions on the chart.", icon: MessageSquare, highlight: false },
                 { title: "Pattern Recognition", desc: "Spot historical setups that mirror today's move.", icon: TrendingUp, highlight: true },
-                { title: "US-Market Focus", desc: "Designed for UK traders investing in the US.", icon: Globe, highlight: false },
+                { title: "Market Focus", desc: "Designed for traders investing globally.", icon: Globe, highlight: false },
                 { title: "Compliance-First", desc: "Non-advisory insights; GDPR-respecting data.", icon: Shield, highlight: false },
               ].map((feature, i) => {
                 const IconComponent = feature.icon;
@@ -415,25 +411,25 @@ const Index = () => {
 
         {/* PRICING / OFFERS */}
         <section id="pricing" className="py-16 lg:py-20 border-t border-white/10">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
             <h2 className="text-2xl sm:text-3xl font-bold text-center">Choose how you want to start</h2>
-            <div className="mt-10 grid md:grid-cols-3 gap-6 items-center">
+            <div className="mt-10 grid md:grid-cols-2 gap-6 items-stretch">
               {/* FREE PLAN */}
               <div className="pricing-card">
                 <Sparkles className="pricing-sparkles" style={{ color: '#FFFFFF' }} />
-                <h3 className="font-bold text-xl text-white mb-2">Free</h3>
+                <h3 className="font-bold text-xl text-white mb-2">Free (Lifetime)</h3>
                 <div className="mb-6">
-                  <span className="font-bold text-3xl text-white">Rs. 0</span>
-                  <span className="text-white/70 text-sm ml-1">/month</span>
+                  <span className="font-bold text-3xl text-white">$0</span>
+                  <span className="text-white/70 text-sm ml-1">forever</span>
                 </div>
                 <ul className="space-y-3 mb-8 flex-grow">
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>14-day free trial</span>
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Free forever</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>AI candle insights</span>
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>5 AI insights per day</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
@@ -441,57 +437,26 @@ const Index = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Limited daily queries</span>
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>AI candle insights</span>
                   </li>
                 </ul>
-                <button className="pricing-btn-filled w-full">
-                  Register via Vantage
-                </button>
+                <a href="#cta" className="pricing-btn-filled w-full text-center block">
+                  Get Started Free
+                </a>
               </div>
 
-              {/* VANTAGE OFFER - EMPHASIZED */}
-              <div id="offer" className="pricing-card pricing-card-emphasized">
+              {/* MONTHLY SUBSCRIPTION */}
+              <div className="pricing-card pricing-card-emphasized">
                 <div className="pricing-badge">Most popular</div>
-                <h3 className="font-bold text-xl text-white mb-2">Vantage Offer</h3>
+                <h3 className="font-bold text-xl text-white mb-2">Monthly Subscription</h3>
                 <div className="mb-6">
-                  <span className="font-bold text-3xl text-white">Rs. 499</span>
+                  <span className="font-bold text-3xl text-white">$19.99</span>
                   <span className="text-white/70 text-sm ml-1">/month</span>
                 </div>
                 <ul className="space-y-3 mb-8 flex-grow">
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Deposit $500 with Vantage</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Get 1 year Tracr AI free</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Unlimited AI insights</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Priority support</span>
-                  </li>
-                </ul>
-                <button className="pricing-btn-outline w-full">
-                  Register via Vantage
-                </button>
-              </div>
-
-              {/* PRO SUBSCRIPTION */}
-              <div className="pricing-card">
-                <Sparkles className="pricing-sparkles" style={{ color: '#FFFFFF' }} />
-                <h3 className="font-bold text-xl text-white mb-2">Pro Subscription</h3>
-                <div className="mb-6">
-                  <span className="font-bold text-3xl text-white">Rs. 999</span>
-                  <span className="text-white/70 text-sm ml-1">/month</span>
-                </div>
-                <ul className="space-y-3 mb-8 flex-grow">
-                  <li className="flex items-start gap-2">
-                    <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
-                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Unlimited AI insights</span>
+                    <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>1000 AI insights per month</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-white flex-shrink-0 mt-0.5" />
@@ -506,9 +471,9 @@ const Index = () => {
                     <span className="text-sm" style={{ color: '#E6ECF5', lineHeight: '1.5' }}>Premium support</span>
                   </li>
                 </ul>
-                <button className="pricing-btn-outline w-full">
-                  View Plans
-                </button>
+                <a href="#cta" className="pricing-btn-outline w-full text-center block">
+                  Subscribe Now
+                </a>
               </div>
             </div>
           </div>
@@ -524,7 +489,7 @@ const Index = () => {
               </div>
               <div className="md:col-span-2">
                 <p className="text-white/60 text-sm">
-                  Tracr AI provides analytical tools and insights for educational purposes only. It does not offer financial advice or trading recommendations. Past performance is not indicative of future results. Market participation involves risk.
+                  tracr AI provides analytical tools and insights for educational purposes only. It does not offer financial advice or trading recommendations. Past performance is not indicative of future results. Market participation involves risk.
                 </p>
               </div>
             </div>
@@ -548,9 +513,6 @@ const Index = () => {
                 Start Free Trial
               </button>
             </form>
-            <div className="mt-3 text-sm text-white/60">
-              Or <a href="#offer" className="text-accent-500 hover:text-accent-400 underline underline-offset-4">register via Vantage</a> for 1-year free access.
-            </div>
           </div>
         </section>
 
@@ -564,9 +526,9 @@ const Index = () => {
               className="mt-8 space-y-4"
             >
               {[
-                { q: "Is this financial advice?", a: "No. Tracr explains why markets moved, but does not provide trading signals or recommendations." },
-                { q: "Do I need experience?", a: "No. Tracr is built for both beginners and experienced traders who want faster clarity." },
-                { q: "What markets are covered?", a: "Major US equities, key USD forex pairs, and select cryptocurrencies — expanding over time." },
+                { q: "Is this financial advice?", a: "No. tracr explains why markets moved, but does not provide trading signals or recommendations." },
+                { q: "Do I need experience?", a: "No. tracr is built for both beginners and experienced traders who want faster clarity." },
+                { q: "What markets are covered?", a: "Major equities, key forex pairs, and select cryptocurrencies — expanding over time." },
                 { q: "Can I cancel anytime?", a: "Yes. Free trial first, then flexible plans with no lock-ins." },
               ].map((faq, i) => (
                 <AccordionItem 
@@ -603,7 +565,7 @@ const Index = () => {
                 T
               </div>
               <span className="text-white/70 text-sm">
-                © {new Date().getFullYear()} Tracr AI. All rights reserved.
+                © {new Date().getFullYear()} tracr AI. All rights reserved.
               </span>
             </div>
             <nav className="flex items-center gap-5 text-white/70 text-sm">
@@ -635,10 +597,7 @@ const Index = () => {
                 </button>
               </div>
               <p className="mt-4 text-white/80 leading-relaxed">
-                Be among the first to experience Tracr's AI-powered market insights. Traders, investors, and learners worldwide are joining the waitlist — don't miss your chance to get early access.
-              </p>
-              <p className="mt-3 text-white/80">
-                Deposit $500 with Vantage today and unlock <strong>lifetime</strong> access to Tracr AI.
+                Be among the first to experience tracr's AI-powered market insights. Traders, investors, and learners worldwide are joining the waitlist — don't miss your chance to get early access.
               </p>
               <form className="mt-6 space-y-4">
                 <div>
@@ -666,7 +625,7 @@ const Index = () => {
                 </button>
               </form>
               <div className="mt-4 text-xs text-white/70 border border-white/10 rounded-xl p-3">
-                By registering, you agree to receive updates about Tracr's launch. We respect your privacy and won't spam you. You can unsubscribe at any time.
+                By registering, you agree to receive updates about tracr's launch. We respect your privacy and won't spam you. You can unsubscribe at any time.
               </div>
             </div>
           </div>
