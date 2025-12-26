@@ -560,9 +560,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-accent-400 to-accent-600 flex items-center justify-center font-bold text-sm">
-                T
-              </div>
+              <img src={tracrLogo} alt="tracr logo" className="h-8 w-auto rounded-lg object-contain" />
               <span className="text-white/70 text-sm">
                 © {new Date().getFullYear()} tracr AI. All rights reserved.
               </span>
